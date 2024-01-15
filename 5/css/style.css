@@ -1,0 +1,75 @@
+section {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 450px;
+    padding: 0px 10px 10px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#upper{
+    width: 100%;
+    background-color: #fda7a7;
+    height:40px;
+    position: relative;
+}
+
+#bottom{
+    display: flex;
+}
+
+#left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    margin: 20px;
+    border: 2px solid #fda7a7;
+    min-height: 400px;
+}
+
+#right{
+    float:right;
+    width: 70%;
+    min-height: 400px;
+}
+
+
+
+#col{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    float:right;
+    min-height: 400px;
+}
+
+.square{    /*наши перетаскиваемые элементы*/
+    padding: 20px 20px; /* расстояние от текста до края кнопки */
+    margin: 10px 10px;
+    background-color: rgb(157, 236, 232);
+    
+    max-width: 150px;
+    border: none;
+    align-items: center;
+}
+
+
+
+
+
+#added_words{
+    background-color: #ffffff;
+    border: 2px solid  #fda7a7;
+    width: 30%;
+    height: 36px;
+    margin: auto;
+    position: absolute;
+}
+
+.crush{
+    background-color: rgb(157, 236, 232);
+    padding: 10px;
+
+}
