@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&dislay=swap');
+
+
+:root {
+    --bg1: #151828;
+    --bg2: #181F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+
+}
+
+body {
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color:#fff;
+}
+
+a{
+    color:var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--brand);
+
+}
+
+.link-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon {
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon {
+transform: translateX(8px)
+
+}
+
+img {
+    width: 100%; 
+}
+
+section {
+    padding-top: 200px;
+    padding-bottom: 160px;
+
+}
+
+/* intro */
+
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6{
+    color:var(--brand);
+
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+.cta-btns {
+    margin-top: 60px;
+}
+
+/* navbar */
+
+.navbar {
+    background: linear-gradient(to bottom,#181F34, rgba(27, 31, 52, 0.1))
+
+}
+
+.navbar.navbar-nav.nav-line.active {
+    color: #FFAB76;
+}
+
+.navbar-brand {
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 32px;
+}
+
+
+/* hero */
+#hero {
+    background: linear-gradient(to bottom right,#181F34, 40%, rgba(27, 31, 52, 0.1)), url(../img/cover_12.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#hero p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* btn */
+
+.btn {
+    padding: 16px 36px;
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    transition: all 0.4s ease;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline_brand:hover {
+    background-color: var(--brand);
+}
+
+/* About */
+#about {
+    position: relative;
+
+}
+
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about .dd {
+    box-shadow: #151828 0 0 600px 100px, #151828 0 0 100px, inset rgba(0,0,0,.2) 0 0 100px;
+    
+
+}
+
+#about h6 {
+    color: var(--brand);
+}
+
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* service */
+
+#services{
+    background: var(--bg2);
+
+}
+
+#services .service .content{
+    padding: 32px;
+
+
+}
+
+#services .service p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+
+}
+
+
+/* milestone */
+
+#milestone {
+    background: linear-gradient(to bottom right,rgba(24, 31, 52, 0.8),  rgba(24, 31, 52, 0.8)), url(../img/cover_12.png);
+    background-size: cover;
+}
+
+#milestone h1 {
+    color: var(--brand);
+}
+
+
+/* feature */
+#feature{
+    background-color: var(--bg2);
+}
+.feature{
+    display: flex;
+}
+
+.feature .icon-feature {
+    font-size: 36px;
+    color: var(--brand);
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.feature p {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*social icons*/
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+/*team*/
+
+.team-member{
+    position: relative;
+}
+
+.team-member .social-links {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 30px;
+}
